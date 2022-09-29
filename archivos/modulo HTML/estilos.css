@@ -1,0 +1,57 @@
+html{
+    background: #000030; /* indica color u imagen de fondo */
+    font-family: Arial, Helvetica, sans-serif; /* Indica tipo de fuente del texto */
+    text-align: center; /*alineacion del contenido respecto de la ventana */
+}
+
+nav{
+    background:#00806f;
+    color: aliceblue; /*Indica color de la fuente */
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+table{
+    border-collapse: collapse;
+}
+
+hr{
+    border-color: rgb(255, 254, 254);
+
+}
+
+thead{
+    background-color: #801e00;
+}
+
+th, td{
+    border: 1px;
+    border-style: solid;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+section{
+    background: #000080;
+    color: aliceblue;
+}
+
+article{
+    background: #3800a0;
+}
+
+aside{
+    background: #80004b;
+}
+
+footer{
+    background: #807e00;
+}
+
+.sub{
+    cursor: pointer;
+}

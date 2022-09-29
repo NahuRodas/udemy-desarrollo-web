@@ -1,0 +1,58 @@
+*{ /*Selector Universal (afecta todo el documento) */
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+/*Selectores de elemento (afecta el elemento seleccionado) */
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    background: blanchedalmond;
+    padding: 10px;
+    font-family: cursive;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+}
+
+hr{
+    margin: 10px;
+}
+
+
+/*Selector descendente (afecta al elemento hijo de un determinado padre)*/
+div p span{
+    background-color: aqua;
+}
+
+/*Selector por id (es unico de un solo elemento, no pueden haber dos id iguales)*/
+#pais {
+    color: blueviolet;
+    background-color: blanchedalmond;
+}
+
+/*Selector por clase (afecta a todos los elementos perteneciente a dicha clase)*/
+.provincia{
+    color: darkred;
+    background-color: aquamarine;
+}
+
+/*Selectores hijos*/
+.contenido > p{
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 15px;
+}   
+
+/*Selector de hermano o adyacente*/
+h3 + p{
+    background-color: aliceblue;
+    color: darkblue;
+    font-size: large;
+}
+
+/*Selectore de hermano general*/
+.mas_contenido ~ p{
+    background-color: antiquewhite;
+}
+

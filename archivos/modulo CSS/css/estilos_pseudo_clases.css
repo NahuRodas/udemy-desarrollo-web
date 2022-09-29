@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    font-family: cursive;
+}
+
+/*Pseudo clase first-child*/
+p span:first-child{
+    background-color: maroon;
+    color: aliceblue;
+} 
+
+/*Pseudo clase last-child*/
+p span:last-child{
+    background-color: rgb(10, 46, 3);
+    color: rgb(146, 163, 138);
+}
+
+/*Pseudo clase first-child*/
+p span:only-child{
+    background-color: rgb(255, 251, 3);
+    color: rgb(86, 7, 133);
+}
+
+a:lang(es){
+    background-color: aqua;
+    color: black;
+    padding: 1px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-style: dashed;
+}
+
+a:hover{
+    background-color: antiquewhite;
+    color: blue;
+    padding: 1px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-style: solid;
+}

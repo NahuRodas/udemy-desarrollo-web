@@ -1,0 +1,210 @@
+<!DOCTYPE html> <!--Tipo de HTML utilizado-->
+
+<html lang="es/en"> <!--Etiqueta principal del archivo .html-->
+
+     <head> <!--En el head va toda la informacion sobre la pagina-->
+        <noscript> <!--Mensaje de alerta para cuando un buscador web no soporta la ejecucion de scripts-->
+            <p>ERROR tu navegor web no soporta la ejecucion de javaScript</p>
+        </noscript>
+        <title>Titulo de la pagina web</title> <!--Titulo de la pagina-->
+        <link rel="stylesheet" href="estilos.css"> <!--Enlaza otros archivos a la pagina-->
+        <meta charset="UTF-8"><!--Informacion de la pagina web no visible, en este caso sobre el tipo de caracteres utilizados-->
+        <meta name="description" content="Ventas al por mayor">
+        <meta name="keywords" content="ventas, al por mayor, moron, tecnologia">
+        <meta name="copyright" content="Tecnoventas (c) 2016">
+
+    </head>
+
+    <body><!--Parte central de una pagina web-->
+        <nav><!--Enlaces a las diferentes secciones de la web-->
+            <ul><!--Etiquetas de lista desordenada-->
+                <li> <!--Contenedor del elemento de la lista-->
+                    <a href="index.html">Inicio</a> <!--Enlaza una URL-->
+                </li>
+                <li><a href="">Trabajos</a></li>
+                <li><a href="">Contactos</a></li>
+                <li><a href="">No se</a></li>
+            </ul>
+            <ol><!--Etiquetas de lista ordenada-->
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li><a href="">Trabajos</a></li>
+                <li><a href="">Contactos</a></li>
+                <li><a href="">No se</a></li>
+            </ol>
+        </nav>
+        <header> <!--Introduccion al contenido de la pagina-->
+            <h1 style="color: white;">HEADER</h1>
+            <img src="headerImage.jpg" alt="header">
+        </header>
+        <main>
+            <section> <!-- Secciona el cuerpo de la pagina-->
+                <article> <!--Articulo que contiene titulo, parrafo, imagen, etc-->
+                    <h1>Articulo 1</h1>
+                    <p> <!--Sirve para agrupar texto en un PARRAFO-->
+                        Lorem ipsum dolor sit 
+                        <ins cite="#Actualizacion" date="2022-09-20"> <!--Indica edicion, agregar informacion, en la pagina web-->
+                            amet consectetur
+                        </ins> 
+                        , adipisicing elit. 
+                        <del cite="#Actualizacion" date="2022-09-20"> <!--Indica la eliminacion de informacion en la pagiona web-->
+                            Inventore, excepturi, 
+                        </del> 
+                        laborum quaerat officia aliquid facilis voluptatibus quos delectus officiis quia dignissimos odit sint architecto ex culpa. Reprehenderit, velit earum. Nisi!
+                    </p>
+                </article>
+                <article>
+                    <h1>Articulo 2</h1>
+                    <p>
+                        Lorem ipsum dolor <br> <!--Inserta un salto de linea-->
+                        sit amet consectetur, adipisicing elit. <hr> <!-- Separa texto con una linea-->
+                        Inventore, excepturi, laborum quaerat 
+                        <blockquote> <!--Para citar otros autores o fuentesd e información-->
+                        officia aliquid facilis voluptatibus quos delectus officiis quia dignissimos odit sint architecto ex culpa. Reprehenderit, velit earum. Nisi!
+                        </blockquote>
+                    </p>
+                </article>
+                <article>
+                    <figure> <!--Sirve para agrupar cualquier contenido pero se utiliza mas para imagenes junto con el <figcaption>-->
+                        <img src="image.png" alt="Bonita mi bb">
+                    </figure>
+                    <figcaption> <!--Informacion sobre la imagen del <figure>-->
+                        Aprender un poco cada día marca la diferencia. Hay estudios que muestran que los estudiantes que hacen del aprendizaje un hábito tienen una mayor probabilidad de alcanzar sus objetivos.
+                    </figcaption>
+                    <details> <!--Informacion oculta que puede ser desplegada-->
+                        <summary>Mas informacion</summary> <!--Titulo de la informacion oculta-->
+                        sadughdfaughfadijhfadhkdfahjfadijhadijh
+                    </details>
+                    
+                </article>
+            </section>
+            <section>
+                <h1>ASIDE</h1>
+                <aside>
+                    <h1>Publicidad</h1>
+                </aside>
+                <aside>
+                    <h1>Publicidad</h1>
+                </aside>
+                <aside>
+                    <h1>Publicidad</h1>
+                </aside>
+                <aside>
+                    <h1>Publicidad</h1>
+                </aside>
+            </section>
+            <section>
+                <h1>TABLAS</h1>
+                <table> <!--Etiqueta para creaciond e una TABLA-->
+                    <tr> <!--Inserta una FILA a la TABLA-->
+                        <td> <!--Inserta una CELDA a la TABLA-->
+                            1.1
+                        </td>
+                        <td colspan="2"> <!--Expande X cantidad de columnas (derecha/izquierda)-->
+                            1.2
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            2.1
+                        </td>
+                        <td rowspan="2"> <!--Expande X cantidad de filas (arriba/abajo)-->
+                            2.2
+                        </td>
+                        <td>
+                            2.3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3.1
+                        </td>                        
+                        <td>
+                            3.3
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <thead> <!--Encabezado de una TABLA-->
+                        <tr>
+                            <td> Nombre </td>
+                            <td>Apellido</td>
+                            <td>Direccion</td>
+                            <td>Telefono</td>
+                        </tr>
+                    </thead>
+                    <tbody> <!--Cuerpo de una TABLA-->
+                        <tr>
+                            <td>Cesar</td>
+                            <td>Rodas</td>
+                            <td>sadfdsaf</td>
+                            <td>454564564</td>
+                        </tr>
+                        <tr>
+                            <td>Nichole</td>
+                            <td>Nelson</td>
+                            <td>scncvnbcv</td>
+                            <td>12123321</td>
+                        </tr>
+                        <tr>
+                            <td>Cesar</td>
+                            <td>Rodas</td>
+                            <td>sadfdsaf</td>
+                            <td>454564564</td>  
+                        </tr>
+                    </tbody>
+                </table>    
+            </section>
+            <section>
+                <h1>FORMULARIOS</h1>
+                <form action="" method="get"> <!--Contenedor de los elementos de un formulario-->
+                    <fieldset> <!--Dibuja un recuadro para agrupar elementos-->
+                        <legend>Datos personales</legend> <!--Subtitulo o informacion respecto al contenido del recuadro <fieldset>-->
+                        <h3>Nombre de Usuario: <input name="nombreUsuario" type="text"></h3>
+                        <h3>Contraseña: <input name="contraseña1" type="password"></h3>
+                        <h3>Email: <input name="email" type="email"></h3>
+                        <h3>Telefono: <input type="tel"></h3>
+                        <h3>Sobre ti: <textarea name="" id="" cols="30" rows="10"></textarea></h3>
+                    </fieldset>
+                    <h3>Fecha: <input type="date"></h3>
+                    <h3>Genero: M<input name="genero" value="masculino" type="radio">F<input name="genero" value="femenino" type="radio"></h3>
+                    <h3>Ceptar terminos y condiciones: <input type="checkbox"></h3>
+                    <h3>Buscar: <input type="search"></h3>
+                    <h3>Slider: <input type="range" min="0" max="300" value="10"></h3>
+                    <h3>Menu comidas: <input type="text" list="comidas"></h3>
+                    <h3>Lista de seleccion:
+                        <select name="lenguaje" id="lenguaje" >
+                                <option value="">--Seleccionar--</option>
+                            <optgroup label="Latino">
+                                <option value="español">Español</option>
+                                <option value="portugues">Portugues</option>
+                                <option value="italiano">Italiano</option>
+                            </optgroup>
+                            <optgroup label="Otro">
+                                <option value="dutch">Dutch</option>
+                                <option value="french">French</option>
+                                <option value="english">English</option>
+                            </optgroup>
+                        </select>
+                    </h3>
+                    <progress value="50" max="100"></progress><br>
+                    <meter value="20" min="1" max="100"></meter><br>
+                    <input class="sub" type="submit">
+
+                    <datalist id="comidas"> <!--Lista de opsiones para formularios-->
+                        <option value="Hamburguesa"></option>
+                        <option value="Panchos"></option>
+                        <option value="Pizza"></option>
+                    </datalist>
+                </form>
+            </section>
+            <footer>
+                <h1 style="color: white;">FOOTER</h1>   
+                <p>Copyright (c) 2016</p>
+            </footer>
+        </main>
+        
+    <script src="codigo.js"></script> <!--Referencia a documentos script externos-->
+    </body>
+</html>
