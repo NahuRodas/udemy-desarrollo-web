@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+h1{
+    text-align: center;
+}
+
+#caja{
+    height: auto;
+    width: 70%;
+    min-width: 200px;
+    max-width: 1000px;
+    text-align: justify;
+    background-color: antiquewhite;
+    margin: 20px auto;
+    padding: 10px;
+    border-style: double;
+    border-width: 6px;
+}
+
+#caja2{
+    height: auto;
+    width: 70%;
+    min-width: 200px;
+    max-width: 1000px;
+    text-align: justify;
+    background-color: antiquewhite;
+    margin: 20px auto;
+    padding: 10px;
+    border-style: double;
+    border-width: 6px;
+}
+
+#caja3{
+    padding: 10px;
+    margin: 40px;
+    border: 1px dotted red;
+}
+
+#float_clear{
+    margin: 100px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+ul li{
+    list-style: none;
+    padding: 5px;
+    border: 1px dotted;
+}
+
+span{               /*inline-block hace lo mismo pero no aplica salto de linea*/
+    /*display: block; <--Ocupa todo el ancho de su contenedor padre y aplica salto de linea*/
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+    background-color: antiquewhite;
+}
+
+
+td, th{
+    padding: 5px;
+}
+
+a{
+    display: table-row;
+}
+.tabla{
+    display: table-cell;
+    text-align: center;
+    width: 100px;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid black;
+    border-top: none;
+}
+article{
+    display: table-caption;
+    text-align: center;
+    border: 1px solid black;
+}
+
+img{
+    float: left;
+}
+
+.d1{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 50px;
+}
+.d2{
+    background-color: blueviolet;
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin: 50px;
+}
+.limpiador{
+    clear: both;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
