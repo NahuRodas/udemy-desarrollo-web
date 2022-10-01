@@ -1,12 +1,143 @@
 *{
     margin: 0px;
-    padding: 20px;
+    padding: 0px;
     font-family: cursive;
     box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    text-align: center;
+}
+
+h1{
+    font-size: 20;
+    text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 .absolutas{
     height: 100px;
     width: 200px;
     background-color: aqua;
+    margin-bottom: 30px;
+}
+
+.relativas{
+    height: 250px;
+    width: 400px;
+    background-color: rgb(200, 255, 0);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.relativas #porc{
+    background-color: antiquewhite;
+    font-size: 75%;
+}
+.relativas #em{
+    background-color: rgb(215, 250, 244);
+    font-size: 2em;
+}
+.relativas #ex{
+    background-color: rgb(250, 215, 247);
+    font-size: 3ex;
+}
+.relativas #rem{
+    background-color: rgb(215, 250, 222);
+    font-size: 4rem;
+}
+
+.caja1{
+    background-color: beige;
+    height: 100px;
+    width: 100vw;
+}
+.caja2{
+    background-color: brown;
+    color: aliceblue;
+    height: 50vh;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.key{
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+.hex{
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: #000030;
+    color: white;
+}
+
+.rgb{
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(215, 250, 244);
+}
+
+.hsl{
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: hsl(100,50%,50%);
+}
+
+.rgba{
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(215, 250, 244, .5);
+}
+
+.hsla{
+    margin: 10px auto;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: hsl(100,50%,50%,.5);
+}
+
+#yes{
+    color: rgb(171, 255, 149);
+    text-decoration: double;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+}
+
+section{
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.sec1{
+    background-color: #000030;
+}
+
+.sec2{
+    background-image: url("https://picsum.photos/id/684/600/400");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    overflow: auto;
+    padding: 10px;
+    text-align: justify;
 }
