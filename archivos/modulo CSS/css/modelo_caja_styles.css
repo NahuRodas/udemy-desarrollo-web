@@ -4,6 +4,10 @@
     font-family: cursive;
 }
 
+html{
+    background: linear-gradient(27deg,aquamarine, white);
+}
+
 h1{
     text-align: center;
 }

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+body{
+    background-color: chocolate;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#contenedor div{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 30px;
+}
