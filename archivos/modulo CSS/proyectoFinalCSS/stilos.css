@@ -39,6 +39,13 @@ html, body{
     margin: 0px 30px;
     font-size: 20px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+#nave a:hover{
+    background-color: rgb(60, 192, 245);
+    color: black;
+    padding: 20px;
 }
 
 /*Estilos del Header*/
@@ -46,11 +53,12 @@ header{
     height: 1290px;
     width: 100%;
     background-image: url("/archivos/modulo CSS/proyectoFinalCSS/resources/2449739-assets/bg-header.jpg");
-    background-size:100% ;
+    background-size:cover;
     background-repeat: no-repeat;
     z-index: 0;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    display: block;
 }
 
 header #sports{
@@ -71,10 +79,8 @@ header #headerText{
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 1000px;
+    width: 70%;
     margin: 20px auto;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 header #headerBut{
     justify-content: center;
@@ -94,8 +100,7 @@ header button{
     width: 350px;
     height: 80px;
     border-style: none;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-top: 100px;
 }
 header button:hover{
     background-color: rgba(224, 224, 224, 0.836);
@@ -130,21 +135,268 @@ header button:hover{
 
 #div1{
     margin-top: 0px;
-    padding-top: 0px;
     background-color: rgb(29, 29, 29);
     color: white;
-    height: 300px;
-    justify-content:space-between;
+    height: 400px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+}
+#div1 p{
+    font-size: 20px;
+}
+
+
+#div1 .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    text-align: left;
+}
+
+#div1 #one{
+    width: 400px;
+    margin: 30px;
+}
+#div1 #two{
+    width: 400px;
+    margin: 30px;
+}
+#div1 #three{
+    width: 400px;
+    margin: 30px;
+}
+
+#priorities{
+    background-image: url("/archivos/modulo CSS/proyectoFinalCSS/resources/2449739-assets/bg-priorities.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 1400px;
+    margin-top: 0px;
     text-align: center;
     display: flex;
 }
 
-#div1 #one{
-    width: 300px;
+#priorities #prioritiesTop{
+    color: rgb(60, 192, 245);
+    padding-top: 100px;
 }
-#div1 #two{
-    width: 300px;
+
+#priorities #prioritiesTop p{
+    font-size: 25px;
 }
-#div1 #three{
-    width: 300px;
+
+#priorities #company{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+#priorities .comp{
+    background-color: rgba(31, 31, 31, 0.753);
+    width: 200px;
+    padding: 60px;
+}
+
+#priorities .comp p{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#weDo{
+    background-color: black;
+    height: 1000px;
+    display:flex;
+    text-align: center;
+}
+
+
+#weDo #weDoTop{
+    color: rgb(60, 192, 245);
+    padding-top: 100px;
+    margin-bottom: 200px;
+}
+
+#weDo p{
+    font-size: 20px;
+}
+
+#weDo #weDoBot{
+    padding-top: 100px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+#weDoBot .caja{
+    width: 200px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentario{
+    background-color: rgb(29, 29, 29);
+    color:rgb(60, 192, 245);
+    height: 400px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentario p{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+
+.comentario span{
+    font-size: 20px;
+}
+
+#nature{
+    height: 720px;
+    background-color: black;
+    background-image: url("/archivos/modulo CSS/proyectoFinalCSS/resources/2449739-assets/bg-nature.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    color:rgb(60, 192, 245);
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+}
+
+#natureTexto{
+    width: 600px;
+}
+#natureTexto p{
+    font-size: 25px;
+}
+
+#buy{
+    height: 800px;
+    background-image: url("/archivos/modulo CSS/proyectoFinalCSS/resources/2449739-assets/bg-buy.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#buy #agrup{
+    width: 400px;
+    display: block;
+    padding-right: 100px;
+}
+
+#buyBut{
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 40px;
+    color: rgb(60, 192, 245);
+    font-size: 15px;
+    font-weight: bold;
+    width: 150px;
+    height: 80px;
+    border-style: none;
+    margin-top: 20px;
+}
+#buyBut:hover{
+    background-color: rgba(224, 224, 224, 0.836);
+    cursor: pointer;
+}
+#buy span{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#buy p{
+    font-size: 20px;
+}
+
+#div2{
+    background-color: rgb(29, 29, 29);
+    height: 300px;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#div2 h3{
+    font-size: 25px;
+}
+#div2 p{
+    font-size: 20px;
+}
+
+#div2 .cont{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#comentario2{
+    background-color: rgb(0, 0, 0);
+    color:rgb(60, 192, 245);
+    height: 400px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#comentario2 p{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+
+#comentario2 span{
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(29, 29, 29);
+    color:aliceblue;
+    height: 400px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+footer .cont{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#izq{
+    text-align: left;
+    width: 400px;
+}
+#der{
+    display: flex;
+}
+#der div{
+    margin-right: 100px;
+    width: 60px;
+}
+
+#der div h1{
+    margin-bottom: 100px;
 }
