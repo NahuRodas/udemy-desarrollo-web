@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: burlywood;
+    font-family: cursive;
+}
+
+section{
+    background-color: aliceblue;
+    height: 800px;
+    width: 80%;
+    margin:5% auto;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+h1{
+    padding: 5px;
+    border: 2px dashed burlywood;
+    background-color:antiquewhite;
+}
+p{
+    display: flex;
+}
