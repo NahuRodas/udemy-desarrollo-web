@@ -23,7 +23,13 @@ h1{
     padding: 5px;
     border: 2px dashed burlywood;
     background-color:antiquewhite;
+    text-align: center;
 }
 p{
     display: flex;
+}
+
+#res{
+    margin-top: 100px;
+    text-align: left;
 }

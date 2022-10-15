@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element</title>
+</head>
+<body>
+    <style>
+        html{
+            background: linear-gradient(#e66465,#e664d5, #9198e5,#e66465);
+
+        }
+    </style>
+    <h2 id="info" class="texto dos testing">
+        <span class="soyUnSpan">Hola mundo</span>
+        <span >qué tal?</span>
+    </h2>
+    <form action="" method="GET">
+        <input name="usuario" type="text" placeholder="Usuario"><br>
+        <br>
+        <input name="contrasena" type="password" placeholder="Contraseña">
+    </form>
+    <p class="texto">Párrafo 1</p>
+    <p class="texto">Prueba</p>
+    <p class="lorem">Lorem ipsum dolor sit.</p>
+    <a href="https://google.com.co" class="enlace">Google</a><br>
+    <a href="https://youtube.com" class="enlace">Youtube</a><br>
+    <br>
+    <button class="eventos" data-valor='cancelado'>Cancelar</button>
+    <button class="eventos" data-valor='enviado'>Enviar</button>
+    <p name="lorem1">Lorem 1</p>
+    <p name="lorem2">Lorem 2</p>
+
+    <script>
+        console.log(document);
+        
+        let info = document.getElementById("info");
+        console.log(info);
+        
+        let claseSpan = document.getElementsByClassName("soyUnSpan");
+        console.log(claseSpan);
+        
+        let tags = document.getElementsByTagName("p");
+        console.log(tags);
+
+        let nombre = document.getElementsByName("usuario");
+        console.log(nombre);
+
+        console.log(document.querySelector("a"));
+        console.log(document.querySelectorAll("a,p"));
+
+    </script>
+</body>
+</html>

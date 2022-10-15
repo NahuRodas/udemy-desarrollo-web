@@ -67,7 +67,7 @@ while (bandera == "si") {
     document.write("</p>"); */
 
 //FOR
-var array = [], cant;
+/* var array = [], cant;
 cant = prompt("Ingrese el tamaño del array")
 
 for (let i = 0; i < cant; i++) {
@@ -77,4 +77,60 @@ for (let j = 0; j < array.length; j++) {
     document.write("<br><p>");
     document.write(array[j]);
     document.write("</p>");
+} */
+
+//FUNCIONES
+/* function preguntarNombre() {
+    var nombre = prompt("Ingrese su nombre")
+    document.write(nombre);
 }
+
+function suma(x, y){
+    document.write(x+y);
+}
+
+function pedirNumeros() {
+    var band = "si";
+    var nums = [];
+    do {
+        var i = 0;
+        nums[i] = prompt("Ingresa un numero");
+        band = prompt("Quiere agregar otro numero?");
+        i++
+    } while (band == "si");
+
+    return nums;
+}
+
+function potencia() {
+    var resultado = 1;
+    var arg = arguments;
+    for (let i = 0; i < arg.length; i++) {
+        resultado *= Number(arg[i]);
+    }
+    document.write(resultado);
+} */
+
+//FUNCION ARROW
+var suma = (x,y) => x + y;
+console.log(suma(5,8));
+
+let frutas = [
+    "Manzana",
+    "Durazno",
+    "Pera",
+    "Naranja"
+];
+
+console.log(frutas);
+
+frutas = frutas.map(fruta => fruta.length);
+console.log(frutas);
+
+
+//TEMPLATE STRING
+var val = document.getElementById("valor");
+
+var suma = 4 + 7;
+var texto = `Valor: ${suma}`; 
+val.innerHTML = texto;
