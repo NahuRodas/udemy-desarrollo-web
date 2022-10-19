@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: burlywood;
+    font-family: cursive;
+}
+
+section{
+    background-color: white;
+    height: auto;
+    width: 80%;
+    margin:5% auto;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+h1{
+    padding: 5px;
+    border: 2px dashed burlywood;
+    background-color:antiquewhite;
+    text-align: center;
+}
+p{
+    display: flex;
+}
+
+button{
+    background-color: rgb(64, 158, 187);
+    height: 50px;
+    width: 100px;
+    color: aliceblue;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#seccion{
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    user-select: none;
+}
+
+#teclas{
+    height: 200px;
+    overflow: scroll;
+}
+
