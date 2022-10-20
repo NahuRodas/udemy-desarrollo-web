@@ -4,6 +4,14 @@ var teclas = document.getElementById("teclas");
 var seccion = document.getElementById("seccion");
 var escuchar = document.getElementById("escuchar");
 var escucharBoton = document.getElementById("click");
+var abrirVentana = document.getElementById("abrirVentana");
+var cerrarVentana = document.getElementById("cerrarVentana");
+var mensaje = document.getElementById("mensaje");
+
+let paises = {"argentina":["Buenos Aires","Rosario","Mar del Plata", "Cosquin"],"espana":["Barcelona", "Madrir", "Valencia"]};
+let selectPaises = document.getElementById("paises");
+let selectCiudades = document.getElementById("ciudades");   
+let outSel = document.getElementById("outSel");
 
 function cambiarColor(Evento) {
     var evento = Evento || window.event;
@@ -40,6 +48,15 @@ function mostrarInfoM(e) {
     seccion.innerHTML = "<p> ("+ x + "," + y + ") </p>";
 }
 
+function makeOptions(values) {
+    let opts = '<option value="">---Seleccione una ciudad---</option>';
+    values.forEach(value => {
+        opts += `<option value="${value}">${value}</option>`;
+    });
+    return opts;
+}
+
+
 //LLAMADO DE LAS FUNCIONES
 document.onkeydown = mostrarInfo;
 document.onkeypress = mostrarInfo;
@@ -50,3 +67,21 @@ color.onclick = cambiarColor;
 document.onclick = mostrarInfoM;
 
 escucharBoton.addEventListener('click', function (){alert("Escucho")}, false);
+
+abrirVentana.addEventListener('click', function(){mensaje.showModal()});
+cerrarVentana.addEventListener('click', function(){mensaje.close()});
+
+selectPaises.addEventListener('change', function () {
+    if (this.value !== ""){
+        let opts = makeOptions(paises[this.value]);
+
+        selectCiudades.innerHTML = opts;
+   } 
+});
+
+selectCiudades.addEventListener('change', function(){
+    if(this.value !== ""){
+        outSel.innerHTML = `Pais: ${selectPaises.options[selectPaises.selectedIndex].text} <br> Ciudad: ${this.value}`;
+    };
+});
+
