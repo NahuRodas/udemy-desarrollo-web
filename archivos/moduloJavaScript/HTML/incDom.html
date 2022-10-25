@@ -9,16 +9,20 @@
 </head>
 <body>
 
-    <h1>Agregar tareas</h1>
+    <div id="tareas">
+        <h1>Agregar tareas</h1>
     <form onkeydown="return event.key != 'Enter';">
         <input id="campoTarea" type="text" name="nombre" placeholder="Tarea...">
         <button id="agregarTarea" type="button">Agregar</button>
     </form>
     <h2>Listado de tareas</h2>
     <ul id="lista-tareas"></ul>
+    </div>
 
     <hr>
     <div id="padre">
+        <p id="tex1">Despues de esto</p>
+        <p id="tex2">Antes de esto</p>
         <div id="lorem">Lorem ipsum</div>
         <p>
             El nodo texto

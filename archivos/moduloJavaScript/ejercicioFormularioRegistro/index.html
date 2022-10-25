@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Registration Form</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <div class="contenedor">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="row">
+                <div class="col w-50">
+                    <input class="campos" id="nombre" type="text" placeholder="Name...">
+                </div>
+                <div class="col w-50">
+                    <input class="campos" id="apellido" type="text" placeholder="Last Name...">
+                </div>
+                <div class="col w-100">
+                    <input class="campos" id="email" type="text" placeholder="Email...">
+                </div>
+                <div class="col w-50">
+                    <input class="campos" id="telefono" type="text" placeholder="Phone...">
+                </div>
+                <div class="col w-50">
+                    <input class="campos" id="ciudad" type="text" placeholder="City...">
+                </div>
+                <button id="btnAgregar" class="btn" type="button">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <h2 style="text-align: center;">Registered Users</h2>
+
+    <table id="tablaUsuarios" class="tabla">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>City</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script src="codigo.js"></script>
+</body>
+</html>
