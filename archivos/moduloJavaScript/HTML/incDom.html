@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/archivos/moduloJavaScript/CSS/incDomEstilos.css">
+    <title>Creando elementos DOM - Document Fragment</title>
+</head>
+<body>
+
+    <h1>Agregar tareas</h1>
+    <form onkeydown="return event.key != 'Enter';">
+        <input id="campoTarea" type="text" name="nombre" placeholder="Tarea...">
+        <button id="agregarTarea" type="button">Agregar</button>
+    </form>
+    <h2>Listado de tareas</h2>
+    <ul id="lista-tareas"></ul>
+
+    <hr>
+    <div id="padre">
+        <div id="lorem">Lorem ipsum</div>
+        <p>
+            El nodo texto
+            <span>Un span.<br></span>
+        </p>
+        <a href="#">Enlace</a>
+    </div>
+
+    <script src="/archivos/moduloJavaScript/JavaScript/incDomCodigo.js"></script>
+</body>
+</html>
