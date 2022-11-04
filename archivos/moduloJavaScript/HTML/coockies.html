@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coockies</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+
+        body{
+            background-color: antiquewhite;
+        }
+        section{
+            background-color: aliceblue;
+            width: 80%;
+            height: fit-content;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        button{
+            padding: 10px;
+            font-weight: bold;
+            background-color: rgb(176, 207, 255);
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover{
+            background-color:rgb(160, 186, 226) ;
+        }
+
+        .form-control{
+            margin-bottom: 10px;
+            width: 96%;
+            height: 30px;
+            padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Cambiar color de fondo</h2>
+        <form action="">
+            <select name="colorFondo" id="colorFondo">
+                <option value="">Seleccionar un color</option>
+                <option value="red">Rojo</option>
+                <option value="blue">Blue</option>
+                <option value="green">Verde</option>
+                <option value="yellow">Amarillo</option>
+            </select>
+        </form>
+        <br>
+        <button id="borrar">Borrar cookies</button>
+
+
+        <script>
+            
+            var colorFondo = document.getElementById("colorFondo"),
+                body = document.body,
+                boton = document.getElementById("borrar"),
+                cookie = document.cookie;
+
+            function cambiarColor() {
+                body.style.backgroundColor = colorFondo.value;
+            }
+
+            function leerCookie(nombre) {
+                var listaC = cookie.split(';');
+
+                for(i in listaC){
+                    var buscar = listaC[i].search(nombre);
+                    if (busca > -1) {
+                        var fondo = listaC[i];
+                        var igual = fondo.indexOf('=');
+                        var valor = fondo.substring(igual+1);
+                    }
+                }
+                body.style.backgroundColor = valor;
+            }
+
+            function guardarCookie(name,value) {
+                document.cookie = name + '=' + value + '; expires = 30 Dec 2023 00:59:59 UTC';
+            }
+
+            colorFondo.addEventListener('change', cambiarColor);
+            boton.addEventListener('click', function(){
+                document.cookie = "valor=xx; expires 30 Dec 1990 00:59:59 UTC";
+                setTimeout(function(){
+                    location.reload();
+                });
+            });
+        </script>
+    </section>
+</body>
+</html>

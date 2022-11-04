@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+    <button id="boton">Prueba</button>
+
+    <script>
+        var a = "Hola, como estas? Me alegro";
+        document.write("<br><br>"+a+"<br><br>");
+
+        boton = document.getElementById("boton");
+        boton.addEventListener('click', function prueba() {
+            try {
+                var x = parseInt(prompt("Input a number: "));
+                var y = parseInt(prompt("Input a number: "));
+
+                if (isNaN(x) || isNaN(y)) {
+                    throw new Error ("You haven't input a valid number.");
+                }
+
+                alert(x+y);
+
+            } catch (error) {
+                alert(error);
+                prueba();
+            }finally{
+                alert("Code executed succefully");
+                stop();
+            }
+        });
+    </script>
+</body>
+</html>

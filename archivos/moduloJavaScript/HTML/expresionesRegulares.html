@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+
+        body{
+            background-color: antiquewhite;
+        }
+        section{
+            background-color: aliceblue;
+            width: 80%;
+            height: fit-content;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        button{
+            padding: 10px;
+            font-weight: bold;
+            background-color: rgb(176, 207, 255);
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover{
+            background-color:rgb(160, 186, 226) ;
+        }
+
+        .form-control{
+            margin-bottom: 10px;
+            width: 96%;
+            height: 30px;
+            padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <form action="" method="post" role="form">
+            <div class="form-group">
+                <input type="email" class="form-control" id="texto" placeholder="Ingresar texto" autocomplete="off">
+                <span id="span"></span>
+                <br>
+                <button type="submit" class="btn btn-default">Enviar</button>
+            </div>
+        </form>
+
+
+
+
+        <script>
+            function write(arg) {
+                document.write(arg+"<br><br>");
+            }
+            var frase = "Esto es un texto. Alumnos y alumnas";
+            var er = /[Aa]lumn[ao]/;
+    
+            var resultado = er.test(frase);
+            write(resultado);
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+</head>
+<body>
+    <script>
+
+        console.clear();
+
+        function write(arg) {
+            document.write(arg+"<br>");
+        }
+
+        function Persona(nombre, edad) {
+
+            var calculo, anio = new Date();
+            
+            this.nombre = nombre;
+            this.edad = edad;
+            this.anioNacimiento = function(edad){
+                calculo = anio.getFullYear() - edad;
+                return calculo;
+            }
+        }
+
+
+        Persona.prototype.saludar = function(nombre){
+            write("Hola " + nombre + " yo soy " + this.nombre);
+        }
+
+
+   
+        let nahuel = new Persona("Nahuel", 24);
+        let juan = new Persona("Juan", 26);
+
+        write("Nombre: " + nahuel.nombre + "<br>Edad: " + nahuel.edad + "<br>Fecha de nacimiento: "+ nahuel.anioNacimiento(nahuel.edad) +"<br>");
+        write("Nombre: " + juan.nombre +  "<br>Edad: " + juan.edad+ "<br>Fecha de nacimiento: "+ juan.anioNacimiento(juan.edad) +"<br>");
+
+        nahuel.saludar(juan.nombre);
+        juan.saludar(nahuel.nombre);
+        
+    </script>
+</body>
+</html>
