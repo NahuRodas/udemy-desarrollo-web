@@ -11,17 +11,18 @@ let pantalla = document.getElementById('pantalla'),
     principio = true,
     calc = true;
 
+    
 
 
 //----------FUNCIONES----------
-function limpiarPantalla() {  //Limpia la pantalla de la calculadora
+function limpiarPantalla() {  // Limpia la pantalla de la calculadora
     pantalla.textContent = 0;
     resultado = 0;
     calc = true;
     principio = true;
 }
 
-function keyCodeClick(e, c) {
+function keyCodeClick(e, c) { // Funcion para utilizar el teclado como entrada
     var entrada = e.textContent,
         code = 0;
     if(entrada == "") return;
@@ -70,16 +71,16 @@ function keyCodeClick(e, c) {
     return;
 }
 
-function isNumPad(num) {
+function isNumPad(num) { // Analiza si la entrada es desde el pad numerico del teclado
     if(num >= 48 && num <= 57) return true;
     return false;
 }
 
-function convert(num) {
+function convert(num) { // Convierte el key code de la entrada
     return num + 48;
 }
 
-function calculador( val ) { //Realiza las operaciones aritmeticas
+function calculador( val ) { // Realiza las operaciones aritmeticas
     val = parseFloat(val);
     resultado = parseFloat(resultado);
     switch (ultOperacion) {
@@ -99,7 +100,7 @@ function calculador( val ) { //Realiza las operaciones aritmeticas
     }
 }
 
-function procesador(entrada) { //Procesa la entrada de datos
+function procesador(entrada) { // Procesa la entrada de datos
     console.log(entrada);
     var val = pantalla.textContent;
 
@@ -129,15 +130,23 @@ function procesador(entrada) { //Procesa la entrada de datos
                 calc = false;
             }else{
                 calculador(parseFloat(val));
-                pantalla.textContent = resultado;
+                if (resultado == Infinity || resultado == NaN) {
+                    pantalla.textContent = "Math error";
+                }else{
+                    pantalla.textContent = resultado;
+                }
             }
             ultOperacion = entrada;
         }else{
             if(entrada == '='){
-                calculador(val);
-                pantalla.textContent = resultado;
-                calc = true;
-                principio = false;
+                calculador(parseFloat(val));
+                if (resultado == Infinity || resultado == NaN) {
+                    pantalla.textContent = "Math error";
+                }else{
+                    pantalla.textContent = resultado;
+                    calc = true;
+                    principio = true;
+                } 
             }else{
                 pantalla.textContent = val + entrada;
             }      
@@ -148,7 +157,7 @@ function procesador(entrada) { //Procesa la entrada de datos
 
 //--------EJECUCIONES-----------
 
-window.addEventListener('keyup', function (e) { //Keyboard event
+window.addEventListener('keyup', function (e) { // Keyboard event
     e.preventDefault();
     var c = e.which || e.keyCode;
 
@@ -158,7 +167,7 @@ window.addEventListener('keyup', function (e) { //Keyboard event
     
 }) 
 
-teclas.forEach(function (e) { //Mouse event
+teclas.forEach(function (e) { // Mouse event
    e.addEventListener('click', function () {
         var entrada = this.textContent;
         procesador(entrada);
